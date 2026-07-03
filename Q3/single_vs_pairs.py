@@ -198,8 +198,4 @@ print(f"{'Single peaks (f1 only)':<28}{score_single:>10}{runner_single:>12}"
       f"{str(correct_single):>10}")
 print(f"{'Pair hashes (f1,f2,dt)':<28}{score_pair:>10}{runner_pair:>12}"
       f"{str(correct_pair):>10}")
-print("=" * 70)
-print(f"Pair-hash margin over single-peak score: "
-      f"{score_pair / max(score_single, 1):.1f}x")
-print(f"\nSaved: {OUT}/08_single_vs_pairs.png")
-print(f"Saved: {OUT}/single_vs_pairs_stats.json")
+print("=" * 70)

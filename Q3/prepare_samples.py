@@ -48,8 +48,4 @@ def main():
     with open(os.path.join(OUT_DIR, 'truth.txt'), 'w', encoding='utf-8') as fp:
         for k, v in label_map.items():
             fp.write(f'{k}\t{v}\n')
-    print(f"\nSaved {N_SAMPLES} sample clips + truth.txt to {OUT_DIR}/")
-
-
-if __name__ == '__main__':
-    main()
+    print(f"\nSaved {N_SAMPLES} sample clips + truth.txt to {O

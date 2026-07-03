@@ -303,13 +303,4 @@ stats = {
     'snr_correct': [bool(x) for x in correct_noise],
     'pitch_semitones': semitones,
     'pitch_scores': [int(x) for x in ps_scores],
-    'pitch_correct': [bool(x) for x in ps_correct],
-    'stretch_rates': rates,
-    'stretch_scores': [int(x) for x in ts_scores],
-    'stretch_correct': [bool(x) for x in ts_correct],
-}
-with open(f'{OUT}/stats.json', 'w') as fp:
-    json.dump(stats, fp, indent=2)
-
-print(f"\nAll figures saved to {OUT}/")
-print("Stats: ", stats)
+    'pitch_correct': [boo

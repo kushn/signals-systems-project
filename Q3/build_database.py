@@ -48,8 +48,4 @@ def main():
     os.makedirs(os.path.dirname(args.out), exist_ok=True)
     db.save(args.out)
     print(f"\nIndexed {len(db)} songs, {db.num_hashes():,} hash entries "
-          f"in {dt:.1f}s. Saved -> {args.out}")
-
-
-if __name__ == '__main__':
-    main()
+          f"in {dt:.1f}s. Saved -> {ar

@@ -63,8 +63,4 @@ def main():
             print(f"  [{i+1}/{len(files)}] {label}")
         except Exception as e:
             print(f"  [{i+1}/{len(files)}] {label}  FAILED: {e}")
-    print(f"Done. Thumbnails in {OUT_DIR}/")
-
-
-if __name__ == '__main__':
-    main()
+    print(f"Done. T

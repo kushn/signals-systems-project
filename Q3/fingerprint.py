@@ -178,9 +178,4 @@ def add_noise(y, snr_db):
     return y + noise
 
 
-def pitch_shift(y, sr, semitones):
-    return librosa.effects.pitch_shift(y, sr=sr, n_steps=semitones)
-
-
-def time_stretch(y, rate):
-    return librosa.effects.time_stretch(y, rate=rate)
+def pi

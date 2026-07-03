@@ -99,7 +99,7 @@ database in sub-second time.
 \begin{mdframed}[style=insightbox]
 \textbf{\color{boxgreen}Live deployment.}
 The full pipeline is deployed at
-\url{https://kushn-shazam.streamlit.app}.
+\url{https://kush-signalsystems.streamlit.app}.
 A 10-second query clip of ``Two of Us'' was identified with a cluster score of
 \textbf{11{,}528} versus a runner-up score of \textbf{11} — a margin of more than
 \(\mathbf{1000\times}\). End-to-end compute time: $\approx$75 ms
@@ -456,7 +456,7 @@ it by $\pm 15\%$, and for many pairs that shift keeps $\Delta t$ within the same
 \subsection{Application overview}
 
 The fingerprinting pipeline is wrapped in a Streamlit application deployed at:\\
-\url{https://kushn-shazam.streamlit.app}\\
+\url{https://kush-signalsystems.streamlit.app}\\
 Source code: \url{https://github.com/kushn/signals-systems-project}
 
 The app ships with the pre-indexed 50-song database (\texttt{db.pkl} committed
@@ -584,7 +584,7 @@ Time-stretch robustness     & Correct at \textbf{all} rates $\in \{0.85,0.92,1.0
 Proposed improvement        & Hash frequency ratios $f_2/f_1$ for pitch invariance \\
 End-to-end latency          & $\approx$75 ms (Streamlit app) \\
 Test identification margin  & ``Two of Us'': score 11{,}528 vs.\ runner-up 11 ($>1000\times$) \\
-Live app                    & \url{https://kushn-shazam.streamlit.app} \\
+Live app                    & \url{https://kush-signalsystems.streamlit.app} \\
 Source code                 & \url{https://github.com/kushn/signals-systems-project} \\
 \bottomrule
 \end{tabular}
@@ -608,16 +608,4 @@ robust to additive noise} (correct even at SNR $= -5$ dB, where noise power exce
 signal power threefold) and \textbf{fully robust to time-stretch up to $\pm15\%$}, but
 \textbf{completely breaks under pitch-shift} of even one semitone. This is inherent to
 hashing absolute frequencies; it could be resolved by hashing frequency ratios
-$f_2/f_1$ at the cost of higher collision rates.
-
-All figures and numerical results in this report were generated directly from the
-provided 50-song database and \texttt{stats.json}.
-
-% ─────────────────────────────────────────────────────────────────────────────
-\begin{thebibliography}{1}
-\bibitem{Wang2003}
-A.\ Wang, ``An industrial-strength audio search algorithm,''
-in \textit{Proc.\ ISMIR}, Baltimore, MD, 2003, pp.\ 7--13.
-\end{thebibliography}
-
-\end{document}
+$f_2/f_1$ at

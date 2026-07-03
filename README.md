@@ -8,7 +8,7 @@
 
 ## 🚀 Quick Links
 
-- **🎵 Live Audio Fingerprinting App (Q3B):** [kushn-shazam.streamlit.app](https://kushn-shazam.streamlit.app)
+- **🎵 Live Audio Fingerprinting App (Q3B):** [kush-signalsystems.streamlit.app](https://kush-signalsystems.streamlit.app)
 - **📦 Source repository:** [github.com/kushn/signals-systems-project](https://github.com/kushn/signals-systems-project)
 
 ---
@@ -22,7 +22,7 @@ This repository contains my complete submission for the project, covering three 
 | **Q1** | Frequency Forensics + Digital Detective — *Ghost Signal & Missing Boundaries* | 5% | [`Q1/`](./Q1/) |
 | **Q2** | The Midnight Episode — *Catching the Arrhythmia* | 7.5% | [`Q2/`](./Q2/) |
 | **Q3A** | Sonic Signatures — *Magical Mystery Tune* | 7.5% | [`Q3/`](./Q3/) |
-| **Q3B** | Signals to Softwares — *Zapptain America* | 5% | [`Q3/`](./Q3/) + [live app](https://kushn-shazam.streamlit.app) |
+| **Q3B** | Signals to Softwares — *Zapptain America* | 5% | [`Q3/`](./Q3/) + [live app](https://kush-signalsystems.streamlit.app) |
 
 ---
 
@@ -69,7 +69,7 @@ audio → Hann-windowed STFT → dB-magnitude spectrogram
 
 **Q3A: Algorithm and experiments** — spectrogram window-length trade-offs, **single peaks vs. paired hashes** (run `python single_vs_pairs.py` to reproduce: pair-hashing gives an **18× larger separation** from the runner-up), noise robustness (correct down to −5 dB SNR), pitch-shift / time-stretch behavior. See [`Q3/report/`](./Q3/report/) for the full writeup.
 
-**Q3B: Live deployed app** at [kushn-shazam.streamlit.app](https://kushn-shazam.streamlit.app) — three tabs:
+**Q3B: Live deployed app** at [kush-signalsystems.streamlit.app](https://kush-signalsystems.streamlit.app) — three tabs:
 - **Library** — browse all 50 indexed songs with their constellation fingerprints
 - **Identify** — upload a clip, see the spectrogram, constellation, offset histogram, and matched song
 - **Batch** — process multiple clips, download `results.csv` with predictions
@@ -132,7 +132,7 @@ streamlit run app.py              # opens the app on http://localhost:8501
 ```
 
 Or just visit the **live deployed version** — no setup required:
-👉 **[kushn-shazam.streamlit.app](https://kushn-shazam.streamlit.app)**
+👉 **[kush-signalsystems.streamlit.app](https://kush-signalsystems.streamlit.app)**
 
 ---
 
@@ -142,13 +142,4 @@ Or just visit the **live deployed version** — no setup required:
 - **NumPy, SciPy** — DFT, convolution, peak detection, spectrograms
 - **Matplotlib** — all plots
 - **Librosa** — audio loading and resampling (Q3)
-- **Streamlit** — web UI for the audio identifier (Q3B)
-- **LaTeX** — report typesetting
-
----
-
-## Author
-
-**** — 
-
-*Built as the final project for Signal Processing Project, .*
+- **Streamlit** — web UI for the audi

@@ -66,5 +66,4 @@ peak is paired with the next 15 peaks ahead of it in time; the triple
 `(f1, f2, dt)` becomes a hash key, stored against `(song_id, t1)`. At query
 time the same hashes are extracted from the clip, looked up in the database,
 and for every match the offset `t_song - t_query` is recorded per song. The
-song whose offset histogram has the tallest single bin wins - that tall spike
-is the fingerprint of a true alignment.
+song whose offset histogram has the tallest single

@@ -492,12 +492,4 @@ with tab_batch:
 
         buf = io.StringIO()
         w = csv.writer(buf)
-        w.writerow(['filename', 'prediction'])
-        w.writerows(rows)
-        st.success(f"Done. {len(rows)} clips processed in {time.time()-t0:.1f}s.")
-        st.dataframe({'filename': [r[0] for r in rows],
-                      'prediction': [r[1] for r in rows]},
-                     use_container_width=True)
-        st.download_button("Download results.csv",
-                           data=buf.getvalue().encode('utf-8'),
-                           file_name="results.csv", mime="text/csv")
+       

@@ -98,6 +98,4 @@ Done.
 - [ ] Streamlit app loads and says "Database loaded: 50 songs"
 - [ ] Single-clip mode identifies a known song correctly
 - [ ] Batch mode produces a results.csv with exact `filename,prediction`
-      header and one row per uploaded clip, predictions matching song
-      filenames without extensions
-- [ ] Both URLs in the report PDF are real and clickable
+      header and one row per uploaded clip, predictions matchi
